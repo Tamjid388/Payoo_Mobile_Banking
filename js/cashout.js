@@ -12,7 +12,14 @@ if(pinNumber==='1234'){
     // Calculation
     const newBalance=balanceNumber-cashoutNumber
 // uI
-    document.getElementById('account-balance').innerText=newBalance
+    document.getElementById('account-balance').innerText=newBalance;
+// add to transaction
+const div=document.createElement('div')
+div.innerHTML="<h1 class='text-center'>Cashout Complete</h1>"
+document.getElementById('transaction-container').appendChild(div)
+
+
+
 }else{
     alert("failed to cashout")
 }
